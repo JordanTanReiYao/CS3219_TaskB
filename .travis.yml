@@ -2,6 +2,7 @@ language: node_js
 node_js:
     - node
 script:
+  - MONGODB_URI = mongodb+srv://jordantan:Dayonday123@cluster0.5ip1z.mongodb.net/resthub?retryWrites=true&w=majority
   - mocha --exit
 services:
   - mongodb
