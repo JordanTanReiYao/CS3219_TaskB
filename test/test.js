@@ -10,7 +10,7 @@ describe("RestHub", () => {
 describe("GET Contacts", () => {
      it("it should GET contacts", (done) => {
      chai.request(app)
-         .get("/contacts")
+         .get("/api/contacts")
          .end((err, res) => {
                (res).should.have.status(200);
                (res.body).should.be.a("object");
@@ -27,7 +27,7 @@ describe('POST Contact', () => {
           phone: "56789012"
       }
         chai.request(app)
-        .post('/contacts')
+        .post('/api/contacts')
         .send(contact)
         .end((err, res) => {
               res.should.have.status(200);
@@ -49,7 +49,7 @@ describe('PUT Contact', () => {
       phone: "56789012"})
       contact.save((err, contact) => {
           chai.request(app)
-           .put('/contacts/' + contact._id)
+           .put('/api/contacts/' + contact._id)
            .send({name: "Timothy Toh",
            email: "TimothyToh@gmail.com",
            gender: "Male",
@@ -72,7 +72,7 @@ describe('DELETE Contact', () => {
       phone: "12345678"})
       contact.save((err, contact) => {
          chai.request(app)
-           .delete('/contacts/' + contact._id)
+           .delete('/api/contacts/' + contact._id)
            .end((err, res) => {
                res.should.have.status(200);
                res.body.should.be.a('object');
