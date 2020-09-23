@@ -28,11 +28,16 @@ else
 var port = process.env.PORT || 8080;
 
 // Send message for default URL
-app.get('/', (req, res) => res.send('Hello World with Express'));
+//app.get('/', (req, res) => res.send('Hello World with Express'));
 
 // Use Api routes in the App
-app.use('/api', apiRoutes);
+//app.use('/api', apiRoutes);
+app.use(apiRoutes);
 // Launch app to listen to specified port
+app.get('/', (req, res) => res.json({
+    status: "success",
+    message: 'The API is working!'
+}));
 app.listen(port, function () {
     console.log("Running RestHub on port " + port);
 });
