@@ -5,6 +5,7 @@ chai.use(chaiHttp);
 let app = require("../index");
 let Contact = require('../contactModel');
 //Our parent block
+chai.should();
 
 describe("RestHub", () => {
 describe("GET Contacts", () => {
