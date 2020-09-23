@@ -9,7 +9,7 @@ deploy:
   provider: lambda
   function_name: "contactsList"
   region: "singapore"
-  role: "arn:aws:iam::0123456789012:role/lambda_basic_execution"
+  role: "arn:aws:lambda:us-east-2:223172640339:function:contactsList"
   runtime: "nodejs4.3"
   access_key_id: "AKIAJ5X2GT3R4WGYQGAQ"
   secret_access_key: "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"
