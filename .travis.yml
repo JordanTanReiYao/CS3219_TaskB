@@ -10,7 +10,7 @@ deploy:
   function_name: "contactsList"
   region: "us-east-2"
   role: "arn:aws:iam::223172640339:role/service-role/contactsList-role-lwdh7i7t"
-  runtime: "nodejs4.3"
+  runtime: "nodejs12.x"
   access_key_id: "AKIAJ5X2GT3R4WGYQGAQ"
   secret_access_key: "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"
   handler_name: "handler"
