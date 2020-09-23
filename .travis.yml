@@ -5,3 +5,10 @@ script:
   - mocha --exit
 services:
   - mongodb
+deploy:
+  provider: lambda
+  function_name: "contactsList"
+  region: "singapore"
+  role: "arn:aws:iam::0123456789012:role/lambda_basic_execution"
+  runtime: "nodejs4.3"
+  handler_name: "handler"
