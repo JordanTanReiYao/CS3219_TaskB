@@ -14,3 +14,5 @@ deploy:
   access_key_id: "AKIAJ5X2GT3R4WGYQGAQ"
   secret_access_key: "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"
   handler_name: "handler"
+  module_name: "lambda"
+  edge: "true"
