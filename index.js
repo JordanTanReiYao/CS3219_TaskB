@@ -1,4 +1,4 @@
-// Import express
+/*// Import express
 let express = require('express');
 // Import Body parser
 let bodyParser = require('body-parser');
@@ -43,3 +43,24 @@ app.listen(port, function () {
 });
 
 module.exports = app;
+*/
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const routes = require('./api-routes');
+const app = express();
+//const dbUsername = process.env.DBUSERNAME;
+//const dbPassword = process.env.DBPASSWORD;
+
+const uri = "mongodb+srv://jordantan:Dayonday123@cluster0.5ip1z.mongodb.net/resthub?retryWrites=true&w=majority";
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'Error connecting to db'));
+db.once('open', console.error.bind(console, 'Db connected successfully'));
+
+app.use('/api', routes);
+
+module.exports = app
