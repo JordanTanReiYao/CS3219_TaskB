@@ -92,7 +92,7 @@ export default {
         .then((response) => response.json())
         .then((result) => {
           if (result.details) {
-            // there was an error...
+            //if there was an error...
             const error = result.details
               .map((detail) => detail.message)
               .join('. ');
