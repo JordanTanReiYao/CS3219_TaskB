@@ -25,14 +25,12 @@ You will access the contact details at http://localhost:8080/api/contacts
 
 ### Instructions on how to run tests locally
 
-Instructions on how to run tests locally:
 1.	Follow the instructions above on how to clone and install the necessary packages using <code>npm install</code>
 2.	Run the command <code>npm test</code> in the root of the project directory.    
 
-### Instructions on how to run tests locally
-Instructions on how to access Travis test results:
+### Instructions on how to access Travis test results
 
-Go to https://travis-ci.com/github/JordanTanReiYao/CS3219_TaskB/builds/182969028
+1. Go to https://travis-ci.com/github/JordanTanReiYao/CS3219_TaskB/builds/182969028
 
 
 ## Task B4
