@@ -6,7 +6,6 @@ let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 // Initialise the app
 const app = express();
-const serverless = require('serverless-http');
 
 
 // Import routes
@@ -42,4 +41,3 @@ app.listen(port, function () {
 });
 
 module.exports = app;
-module.exports.handler = serverless(app);

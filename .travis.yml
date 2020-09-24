@@ -3,7 +3,15 @@ node_js:
     - node
 script:
   - mocha --exit
-  - npm install -g serverless
-  - sls deploy
 services:
   - mongodb
+deploy:
+  provider: lambda
+  function_name: "MyContactsList"
+  region: "us-east-2"
+  role: "arn:aws:iam::223172640339:role/service-role/MyContactsList-role-z8pfpz6x"
+  runtime: "nodejs12.x"
+  handler_name: "handler"
+  module_name: "lambda"
+  edge: "true"
+
