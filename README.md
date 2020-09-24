@@ -1,4 +1,5 @@
-# CS3219 Tasks, B1, B2 and B4
+# CS3219 Tasks B1, B2 and B4
+Written in JavaScript for backend and Vue for frontend
 
 ## Task B1
 
