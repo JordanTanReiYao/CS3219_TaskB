@@ -3,7 +3,7 @@ service: MyContactsList
 provider:
   name: aws
   runtime: nodejs12.x
-  region: ap-southeast-1
+  region: us-east-2
   memorySize: 128
 
 functions:
