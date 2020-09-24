@@ -4,7 +4,7 @@
       <h2>Contacts List</h2>
       <div v-if="message" class="alert alert-dismissible alert-success">
         <h4 class="alert-heading">Success!</h4>
-        <p class="mb-0">{{message}} deleted!</p>
+        <p class="mb-0">{{message}} Deleted!</p>
       </div>
       <hr>
         <div v-if="loading" class="alert alert-dismissible alert-warning">
