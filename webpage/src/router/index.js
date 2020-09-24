@@ -21,7 +21,7 @@ const routes = [
   
   {
     path: '/edit-contact/:id',
-    name: 'Edit Song',
+    name: 'Edit Contact',
     component: () => import('../views/EditContact.vue'),
   },
 ];

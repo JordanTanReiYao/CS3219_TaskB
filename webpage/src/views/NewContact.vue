@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="new-song">
+    <div class="new-contact">
       <form @submit.prevent="addContact">
         <fieldset>
         <legend>New Contact</legend>
