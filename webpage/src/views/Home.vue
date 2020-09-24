@@ -51,7 +51,6 @@ export default {
   },
   methods: {
     clickHandler(contact) {
-      /* eslint no-underscore-dangle: ["error", { "allow": ["_id"] }] */
       fetch(`${API_URL}/${contact._id}`, {
         method: 'DELETE',
       })
