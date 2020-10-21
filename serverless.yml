@@ -17,3 +17,5 @@ functions:
           path: /{proxy+}
           method: ANY
           cors: true
+    environment:
+      DB_SOURCE: 'atlas'
