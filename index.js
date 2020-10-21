@@ -27,7 +27,7 @@ if(!db)
 else
     console.log("Db connected successfully")
 
-// Set up the server port
+// Setup the server port
 var port = process.env.PORT || 8080;
 
 // Send message for default URL
