@@ -4,7 +4,7 @@ node_js:
 script:
   - mocha --exit
   - npm install -g serverless
-  - sls deploy
+  - sls deploy --aws-profile common
 services:
   - mongodb
 
