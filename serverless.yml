@@ -3,7 +3,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
-
+  region: us-east-2
   memorySize: 128
 functions:
   app:
