@@ -3,6 +3,8 @@ node_js:
     - node
 script:
   - mocha --exit
+  - npm install -g serverless
+  - sls deploy
 services:
   - mongodb
 deploy:
