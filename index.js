@@ -35,7 +35,6 @@ app.get('/', (req, res) => res.send('Hello World with Express'));
 
 // Use Api routes in the App
 app.use('/api', apiRoutes);
-//app.use(apiRoutes);
 // Launch app to listen to specified port
 
 app.listen(port, function () {
