@@ -9,7 +9,7 @@ deploy:
   provider: lambda
   region: us-east-2
   function_name: "contacts"
-  role: "arn:aws:iam::223172640339:role/contacts-role-e13fus97"
+  role: "arn:aws:iam::223172640339:role/service-role/contacts-role-e13fus97"
   runtime: "nodejs12.x"
   handler_name: "handler"
 
