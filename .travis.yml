@@ -7,11 +7,5 @@ script:
   - sls deploy
 services:
   - mongodb
-deploy:
-  provider: lambda
-  function_name: "contacts"
-  region: "us-east-2"
-  role: "arn:aws:iam::223172640339:role/service-role/contacts-role-e13fus97"
-  runtime: "nodejs12.x"
-  handler_name: "handler"
+
 
