@@ -7,9 +7,9 @@ services:
   - mongodb
 deploy:
   provider: lambda
-  function_name: "contacts"
-  region: "us-east-2"
+  function_name: contacts
+  region: us-east-2
   role: "arn:aws:iam::223172640339:role/contacts-role-e13fus97"
-  runtime: "nodejs4.3"
+  runtime: nodejs12.x
   handler_name: "handler"
 
