@@ -1,16 +1,18 @@
 language: node_js
 node_js:
-    - node
+- node
 script:
-  - mocha --exit
+- mocha --exit
 services:
-  - mongodb
+- mongodb
 deploy:
   provider: lambda
   region: us-east-2
-  function_name: "contacts"
-  role: "arn:aws:iam::223172640339:role/service-role/contacts-role-e13fus97"
-  runtime: "nodejs12.x"
-  handler_name: "handler"
-
-
+  function_name: contacts
+  role: arn:aws:iam::223172640339:role/service-role/contacts-role-e13fus97
+  runtime: nodejs12.x
+  handler_name: handler
+env:
+  global:
+  - secure: JiEXotZ71NPp1/HznkIiBk8+yOUBbKI+SAC7enzWvPwrHjnil5BOq91WUkiaZ6uYcKJvAi2GxSSpqXfBSAfczFIO5jATCZHObJw37JS4pVTveMmq9wxjk0rC5VprqwDeYDtWjfExDq5dSOmyxqVQAOmCDkhDvmGm7DdyhC50G59fdJgYovdgLURwB01B3Xrjiw4uw0P0rjfEUrdbXOBRuLgX4i29siL1WoE/EtYVlPC99kQ0H7FOXLI+i1iWkIwxs5XjI5BMn7aPYwUh3yXOCaCtbt78hxfPcqqAGJ+LKf82KC7RgT0yFniqGEyQuUYV8qBmwtjjfIZx0SOM/oUHzZsGBkoN2/oGzAmw8U8Wus1Y9Hl9jfEOIorxxHQooyqDNIovHendzRF3kxlNqcjFPZ2nuoREk3VWPoZqPhsPYNMMHlo0SbcTbhs38vQnSehMwVEVzK+u2/TKBeeOf6Key0JmD8EyupNMV9ewkFuE5YXn3Cu5f2pRO7i02jZITrGu2v8RyDPLU0feDi8iTqFlX7MnNVDVOyGZAsrPReZB+8eQrLK0f5qXLt2HnyWS9SB/FfyTT/JtlzOwq3O0FbltxUTAXH5gvK0wUMAgAz6Bj/hM7FR77XyQqOaiy9vuJ8gXF3v4E67zZ4Ff2mh4DPfE/sxvXw8doefw48lSrD/WPag=
+  - secure: WGMS9a42ncmao9RXLkcaYdwbnUo2oBP77zFiyqSg9kpC9NhXyOqYIBj0LghBAEagg0s032NZi1sJmayBlIXzy/TSD273FrM0iJntaiMXg+PZLXh95j7nZqvowW60r6eAufP5S4cIoVB29bkMPi9rwmYuRJpUCfj5VmX2bwdIu/+pxERgYZ4qMZwels7nwumX/T0ralz3kT6ol20aHKEBWZPMJEw4eAnldzClPaHbgkJYRemuanKh3TNf3R12YM30rtv+1zMOFH/ZXD1qte/tuCoXLroAoVet9xk22QJYuZqhV7I8X7DrgvUoyF/ZTiEjpAQkeijSWs3fl53gQ93LmtTHtVM/kF6oWHm9bf/65LS09TxFbD+Kf5JDnHoGMqOhv6l24a2pcqtLs5So/Trv2t4/M55/y/0D8H02EeuGyEpgsWekU7a/pFpNzo+/2nv5i/aLfmfdt9GUL9ydAO1Fslwt+J6bOirC4U0MOzkCrFzJLMnJwRPqzu06WY76v1WJHEkdvd4wauPu2pKI1iLRWtFczhcnMZ5wDY/2EjFetg2Vi6c4IscQPbizZo1eCtIx7usv4LR3VdfD1pM+79stV5YYm1lfO5eqeD/UyUZvpXwDy9xNE6faeuKD9MmFjmO5KPQGNAZsIB80NjG2/Xig/BiQazEs+wbzPa3Vrgs7nsQ=
