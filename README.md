@@ -35,7 +35,7 @@ You will access the contact details at http://localhost:8080/api/contacts
 ## Task B3
 
 ### Instructions on how to access AWS Lambda API
-1. I have deployed the API to AWS Lambda using Travis. Travis automatically deploys the REST API to AWS Lambda using serverless. The API is given by this link:<br> https://6d21nps248.execute-api.us-east-2.amazonaws.com/dev  
+1. I have deployed the API to AWS Lambda using Travis. Travis automatically deploys the REST API to AWS Lambda. The API is given by this link:<br> https://6d21nps248.execute-api.us-east-2.amazonaws.com/dev  
 
 2. To access the contact details use this link:<br> 			               https://6d21nps248.execute-api.us-east-2.amazonaws.com/dev/api/contacts 
 
