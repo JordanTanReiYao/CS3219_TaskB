@@ -26,7 +26,7 @@ if(!db)
     console.log("Error connecting db")
 else
     console.log("Db connected successfully")
-
+//test
 // Setup the server port
 var port = process.env.PORT || 8080;
 
