@@ -1,5 +1,5 @@
-# CS3219 Tasks B1, B2, B3 and B4
-The API created for these tasks is for contact details (e.g. name, email, phone number, gender). Written in JavaScript for backend and Vue for frontend
+# ContactsKeeper
+This project was developed for an assignment for CS3219 at NUS. The API created for these tasks is for contact details (e.g. name, email, phone number, gender). Written in JavaScript for backend and Vue for frontend
 
 ## Task B1
 
